@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    transition: width 3s;
+}
+.split.left{
+    background-color: pink;
+    background-image: url("https://www.imagineonline.store/cdn/shop/files/iPhone_16_Pro_Max_Natural_Titanium_PDP_Image_Position_1__en-IN_76cf3262-ae6a-46aa-880f-d00b0b0dd8b1.jpg?v=1727250940&width=1445");
+    background-size: cover;
+    position: absolute;
+    left: 0;
+}
+h1{
+    font-size: 100px;
+    color: aliceblue;
+    backdrop-filter: brightness(.5);
+    letter-spacing: 4px;
+}
+
+.split.right{
+    background-color: lightblue;
+    background-image: url("https://image-us.samsung.com/us/smartphones/galaxy-s24/all-gallery/01_E3_OnlineExclusive_TitaniumOrange_Lockup_1600x1200.jpg?$product-details-jpg$");
+    background-size: cover;
+    position: absolute;
+    right: 0;
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    font-size: 25px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 1s background-color;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.active{
+    width: 75%;
+}
+.inactive{
+    width: 25%;
+}
+
