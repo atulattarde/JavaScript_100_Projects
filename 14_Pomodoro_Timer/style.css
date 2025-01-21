@@ -1,4 +1,39 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+.container{
+width: auto;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgb(0, 0, 0,0.5);
+}
+#timer{
+    text-align: center;
+    font-size: 44px;
+}
+.wrapper > button{
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    box-shadow: 0px 2px 4px rgb(0, 0, 0,0.4);
+    color: #fff;
+}
+#start{
+    background-color: rgb(22, 184, 22);
+}
+#stop{
+    background-color: rgb(255, 11, 11);
+}
+#reset{
+    background-color: blueviolet;
+}
+
+#start:hover, #stop:hover, #reset:hover{
+    background-color: black;
+}   
+
